@@ -10,7 +10,7 @@ class exercicio13 {
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
-        int num, total=0, fat=0;
+        int num, total=1, valor=1;
 
         //Ler variáveis
         System.out.println ("Inserir valor: ");
@@ -18,11 +18,11 @@ class exercicio13 {
 
         while (num>0)
         {
-          fat = fat * total;
-          total**
+          valor = valor * total;
+          total++;
           num--;
         }
 
-        System.out.println ("Fatorial: " + fat);
+        System.out.println ("Factorial: " + valor);
     }
 }
