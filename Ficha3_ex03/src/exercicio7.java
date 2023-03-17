@@ -10,16 +10,24 @@ class exercicio7 {
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
-        double n=0, ciclo=0, soma=0;
+        //Ciclo tem de iniciar a -1 para essa execução não ser contabilizada
+        double n=0, ciclo=-1, soma=0, media=0;
 
-
-        while (n != (-1))
+        //Ciclo que é executado até o utilizador introduzir o -1
+        while (n!=-1)
         {
+            //Acrescenta um número ao somatório
+            soma = soma + n;
+            //Contabiliza a quantidade de numeros introduzidos / ciclos executados
+            ciclo++;
+
             System.out.println ("Introduza valor: ");
             n = input.nextDouble();
-            soma = soma + n;
-            ciclo = ciclo + 1;
         }
-        System.out.println("A média é: " + (soma / ciclo));
+
+        System.out.println("Somatório: " + soma);
+        System.out.println("Número de ciclos: " + ciclo);
+        media=soma/ciclo;
+        System.out.println("A média é: " + media);
     }
 }
