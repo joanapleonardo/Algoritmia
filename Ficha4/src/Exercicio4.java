@@ -31,6 +31,7 @@ class exercicio4 {
 
             if (counter == 0)
                 System.out.println("O número é primo.");
+
             else
                 System.out.println("O número não é primo.");
 
