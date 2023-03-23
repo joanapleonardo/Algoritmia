@@ -11,22 +11,25 @@ class FP05_Ex04 {
 
         //Declarar variáveis
         double arr[] = new double[10];
-        double menor = arr[0];
-        int i = 0;
+        double menor;
+        int a=0;
 
         System.out.println("Introduzir valor na posição: 0");
-        arr[i] = input.nextDouble();
+        arr[0] = input.nextDouble();
 
-        for (i = 1; i < 10; i++) {
+        menor = arr[0];
+
+        for (int i = 1; i < 10; i++) {
             System.out.println("Introduzir valor na posição: " + i);
             arr[i] = input.nextDouble();
 
 
             if (arr[i] < menor) {
                 menor = arr[i];
+                a=i;
             }
         }
-        System.out.println("O maior valor é: " + menor + " na posição " + i);
+        System.out.println("O maior valor é: " + menor + " na posição " + a);
 
     }
 }
