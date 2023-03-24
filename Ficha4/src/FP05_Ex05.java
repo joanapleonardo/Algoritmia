@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 class FP05_Ex05 {
     public static void main(String[] args) {
-        System.out.println("\n***** Ficha Prática 05 - Exercício 01 *****\n");
+        System.out.println("\n***** Ficha Prática 05 - Exercício 05 *****\n");
 
         //Instancia obrigatória da classe para fazer a leitura das introduções dos dados de utilizador
         Scanner input = new Scanner(System.in);
