@@ -13,19 +13,28 @@ class FP05_Ex13 {
         int mat[][] = new int [2][10];
 
         for (int i = 0; i < arr1.length; i++) {
-            System.out.println("Introduzir valor na posição: " + i);
-            arr1[i] = input.nextDouble();
+            System.out.println("Introduzir valor no vetor1: ");
+            arr1[i] = input.nextInt();
+          //  mat[0][i] = arr1[i];
         }
 
         for (int i = 0; i < arr2.length; i++) {
-            System.out.println("Introduzir valor na posição: " + i);
-            arr2[i] = input.nextDouble();
+            System.out.println("Introduzir valor no vetor2: ");
+            arr2[i] = input.nextInt();
+           // mat[1][i] = arr2[i];
         }
 
-        for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat.length; j++) {
-                mat[i][j]=[arr1][arr2];
+
+            for (int j=0; j<10; j++){
+                mat[0][j]=arr1[j];
+                mat[1][j]=arr2[j];
             }
+
+        for (int i=0; i<2; i++){
+            for (int j=0; j<10; j++){
+                System.out.print(" "+ mat[i][j]);
+            }
+            System.out.println("\n");
         }
 
 
