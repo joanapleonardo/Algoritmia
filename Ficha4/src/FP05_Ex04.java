@@ -29,7 +29,7 @@ class FP05_Ex04 {
                 a=i;
             }
         }
-        System.out.println("O maior valor é: " + menor + " na posição " + a);
+        System.out.println("O menor valor é: " + menor + " na posição " + a);
 
     }
 }

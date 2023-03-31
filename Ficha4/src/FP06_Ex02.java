@@ -3,15 +3,11 @@ import java.util.Scanner;
 
 class FP06_Ex02 {
 
-public static void detpos (int n){
-    if (n>0) {
-        System.out.println("O número é positivo.");
-    }
-    else if (n==0){
-     System.out.println("0 é um número neutro.");
-    }
-    else if (n<0){
-        System.out.println("O número é negativo.");
+public static boolean detpos (int n){
+    if (n > 0) {
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -28,7 +24,10 @@ public static void detpos (int n){
         System.out.println("Insira um valor: ");
         num= input.nextInt();
 
-        detpos(num);
-
+        if (detpos(num)){
+            System.out.println("É positivo.");
+        }else{
+            System.out.println("É negativo.");
+        }
     }
 }

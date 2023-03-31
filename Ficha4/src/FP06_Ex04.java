@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class FP06_Ex04 {
-    public static void detperf(int n){
+    public static boolean detperf(int n){
 
         int soma=0;
 
@@ -11,12 +11,10 @@ class FP06_Ex04 {
                 soma = soma + i;
         }
 
-        if (soma == n) {
-            System.out.println("O número é perfeito.");
-
-        } else {
-            System.out.println("O número não é perfeito.");
-        }
+        if (soma == n)
+            return true;
+         else
+            return false;
 
 
 }
@@ -32,7 +30,11 @@ class FP06_Ex04 {
         System.out.println("Insira um valor: ");
         num= input.nextInt();
 
-        detperf(num);
+        if (detperf(num)){
+            System.out.println("É perfeito.");
+        }else{
+            System.out.println("É não perfeito.");
+        }
 
 
     }

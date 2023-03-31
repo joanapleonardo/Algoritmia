@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 class FP06_Ex01 {
 
-    public static void detpar(int n) {
+    public static boolean detpar(int n) {
         if (n % 2 == 0) {
-            System.out.println("O número é par.");
+           return true;
         } else {
-            System.out.println("O número é impar.");
+            return false;
         }
     }
 
@@ -24,6 +24,10 @@ class FP06_Ex01 {
         System.out.println("Insira um número: ");
         num = input.nextInt();
 
-        detpar(num);
+        if (detpar(num)){
+            System.out.println("É par.");
+        }else{
+            System.out.println("É impar.");
+        }
     }
 }
