@@ -13,9 +13,9 @@ class FP05_Ex06 {
         int i=0;
         boolean crescente=true;
 
-        for (int j = 0; j < 10; j++)
+        for (int j=0; j<10; j++)
         {
-            System.out.println("Introduzir valor na posição: 0");
+            System.out.println("Introduzir valor.");
             arr[j] = input.nextDouble();
 
             if(crescente == true && j > 0 && arr[j - 1] > arr[j])

@@ -10,7 +10,7 @@ class FP05_Ex13 {
 
         int arr1[] = new int[10];
         int arr2[] = new int[10];
-        int mat[][] = new int [2][10];
+        int mat[][] = new int [10][2];
 
         for (int i = 0; i < arr1.length; i++) {
             System.out.println("Introduzir valor no vetor1: ");
@@ -26,13 +26,13 @@ class FP05_Ex13 {
 
 
             for (int j=0; j<10; j++){
-                mat[0][j]=arr1[j];
-                mat[1][j]=arr2[j];
+                mat[j][0]=arr1[j];
+                mat[j][1]=arr2[j];
             }
 
-        for (int i=0; i<2; i++){
-            for (int j=0; j<10; j++){
-                System.out.print(" "+ mat[i][j]);
+        for (int j=0; j<10; j++){
+            for (int i=0; i<2; i++){
+                System.out.print(" "+ mat[j][i]);
             }
             System.out.println("\n");
         }
