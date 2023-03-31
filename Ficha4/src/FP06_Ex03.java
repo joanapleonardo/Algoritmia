@@ -1,17 +1,16 @@
-//import obrigatório do package para fazer a leitura das introduções dos dados de utilizador
 import java.util.Scanner;
 
-class FP06_03 {
+class FP06_Ex03 {
+    /**
+     * Determina se um numero é primo
+     * @param n É o numero que vou perceber se e primo ou não
+     */
 
-    public static void detprimo(int n, counter;){
-        for (int a = 2; a<n; a++)
-        {
-            if (n % a == 0)
-                 counter++;
-        }
+    public static void detprimo(int n){
 
-            for (int a = 2; a<n; a++)
-            {
+        int counter=0;
+
+        for (int a=2; a<n; a++) {
                 if (n % a == 0)
                      counter++;
             }
@@ -23,43 +22,18 @@ class FP06_03 {
                 System.out.println("O número não é primo.");
         }
 
-
-
-
-
-
-    }
     public static void main(String[] args) {
-        System.out.println("\n***** Ficha Prática 05 - Exercício 03 *****\n");
+        System.out.println("\n***** Ficha Prática 06 - Exercício 03 *****\n");
 
-        int num, a;
-        char opcao;
+        Scanner input = new Scanner(System.in);
 
-        do
-        {
-            int counter=0;
-            System.out.println("Inserir valor: ");
-            num = input.nextInt();
-
-            for (a = 2; a<num; a++)
-            {
-                if (num % a == 0)
-                    counter++;
-            }
-
-            if (counter == 0)
-                System.out.println("O número é primo.");
-
-            else
-                System.out.println("O número não é primo.");
+        int num;
 
 
-            System.out.print ("Deseja continuar? S/N\n");
-            opcao = input.next().charAt(0);
-        }
-        while ( opcao == 's' || opcao == 'S');
+        System.out.println("Insira um valor: ");
+        num= input.nextInt();
 
-        System.out.print ("Fim de execução");
+        detprimo(num);
 
     }
 }

@@ -1,7 +1,7 @@
 //import obrigatório do package para fazer a leitura das introduções dos dados de utilizador
 import java.util.Scanner;
 
-class exercicio2 {
+class FP04_Ex02 {
     public static void main(String[] args) {
 
 
