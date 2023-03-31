@@ -14,7 +14,11 @@ class FP05_Ex03 {
         double maior=arr[0];
         int i=0, a=0;
 
-        for(i=0; i<10; i++)
+        System.out.println("Introduzir valor na posição 0");
+        arr[0] = input.nextDouble();
+
+
+        for(i=1; i<10; i++)
         {
             System.out.println("Introduzir valor na posição: " + (i + 1));
             arr[i] = input.nextDouble();

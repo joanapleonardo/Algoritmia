@@ -1,16 +1,37 @@
 //import obrigatório do package para fazer a leitura das introduções dos dados de utilizador
 import java.util.Scanner;
 
-class exercicio4 {
+class FP06_03 {
+
+    public static void detprimo(int n, counter;){
+        for (int a = 2; a<n; a++)
+        {
+            if (n % a == 0)
+                 counter++;
+        }
+
+            for (int a = 2; a<n; a++)
+            {
+                if (n % a == 0)
+                     counter++;
+            }
+
+            if (counter == 0)
+                System.out.println("O número é primo.");
+
+            else
+                System.out.println("O número não é primo.");
+        }
+
+
+
+
+
+
+    }
     public static void main(String[] args) {
+        System.out.println("\n***** Ficha Prática 05 - Exercício 03 *****\n");
 
-
-        System.out.println("\n***** Ficha 4 - Exercicio 4 *****\n");
-
-        //Instancia obrigatória da classe para fazer a leitura das introduções dos dados de utilizador
-        Scanner input = new Scanner(System.in);
-
-        //Declarar variáveis
         int num, a;
         char opcao;
 
