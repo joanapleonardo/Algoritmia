@@ -1,9 +1,15 @@
 //import obrigatório do package para fazer a leitura das introduções dos dados de utilizador
 import java.util.Scanner;
 
+
 class FP04_Ex01 {
     public static void main(String[] args) {
 
+        funcaoTeste();
+    }
+
+    public static void funcaoTeste()
+    {
         System.out.println("\n***** Ficha 4 - Exercicio 1 *****\n");
 
         //Instancia obrigatória da classe para fazer a leitura das introduções dos dados de utilizador
@@ -38,7 +44,7 @@ class FP04_Ex01 {
             }
 
 
-           else if (acao == '/')
+            else if (acao == '/')
             {
                 System.out.println ("A divisão dos valores é: " + (a / b));
             }
@@ -61,8 +67,5 @@ class FP04_Ex01 {
         while ( opcao == 's');
 
         System.out.print ("Fim de execução");
-
-
-
     }
 }
